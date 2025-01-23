@@ -1,5 +1,6 @@
 name: Auto Release CSM go lib gobrick
-on:  # yamllint disable-line rule:truthy
+on:  # yamllint disable-line rule:truth
+  workflow_call:
   workflow_dispatch:
   repository_dispatch:
     types: [release-go-libs]
