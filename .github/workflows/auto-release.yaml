@@ -42,5 +42,5 @@ jobs:
     needs: calculate-version
     uses: satyakonduri/common-github-actions/.github/workflows/csm-release-libs.yaml@main
     with:
-      version: minor
+      version: ${{ inputs.version || needs.calculate-version.outputs.new-version }}
     secrets: inherit
