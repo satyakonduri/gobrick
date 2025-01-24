@@ -39,7 +39,7 @@ jobs:
 
   csm-release:
     needs: calculate-version
-    uses: dell/common-github-actions/.github/workflows/csm-release-libs.yaml@feature/release-creator
+    uses: satyakonduri/common-github-actions/.github/workflows/csm-release-libs.yaml@main
     with:
       version: minor
     secrets: inherit
